@@ -1,0 +1,218 @@
+@import "../../src/common/css/iconStyle.css";
+.clearfix{
+  display: inline-block;
+}
+.clearfix:after{
+  display: block;
+  height: 0;
+  line-height: 0;
+  content: ".";
+  clear: both;
+  visibility: hidden;
+}
+body,html{
+  line-height: 1;
+  font-weight:200;
+  font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', Arial, sans-serif;
+}
+.border-bottom{
+  position: relative;
+}
+.border-bottom:after{
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid rgba(7,17,27,0.1);
+  content: '';
+}
+@media (-webkit-min-device-pixel-ratio: 1.5),(min-device-pixel-ratio: 1.5) {
+  .border-bottom :after{
+      -webkit-transform: scaleY(0.7);
+    tansform:scaleY(0.7);
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),(min-device-pixel-ratio: 2) {
+  .border-bottom :after{
+    -webkit-transform: scaleY(0.5);
+    tansform:scaleY(0.5);
+  }
+  .bg-image{
+    background-image:url("../../src/components/Header/brand@2x.png") ;
+  }
+  .decrease-bg{
+    background-image:url("../../src/components/Header/decrease_1@2x.png") ;
+  }
+  .discount-bg{
+    background-image:url("../../src/components/Header/discount_1@2x.png") ;
+  }
+  .guarantee-bg{
+    background-image:url("../../src/components/Header/guarantee_1@2x.png") ;
+  }
+  .invoice-bg{
+    background-image:url("../../src/components/Header/invoice_1@2x.png") ;
+  }
+  .special-bg{
+    background-image:url("../../src/components/Header/special_1@2x.png") ;
+  }
+  .bulletin-bg{
+    background-image:url("../../src/components/Header/bulletin@2x.png") ;
+  }
+  .star-48 .on{
+    background-image:url("../../src/components/common/star/star48_on@2x.png") ;
+  }
+  .star-36 .on{
+    background-image:url("../../src/components/common/star/star36_on@2x.png") ;
+  }
+  .star-24 .on{
+    background-image:url("../../src/components/common/star/star24_on@2x.png") ;
+  }
+  .star-48 .half{
+       background-image:url("../../src/components/common/star/star48_half@2x.png") ;
+     }
+  .star-36 .half{
+    background-image:url("../../src/components/common/star/star36_half@2x.png") ;
+  }
+  .star-24 .half{
+    background-image:url("../../src/components/common/star/star24_half@2x.png") ;
+  }
+  .star-48 .off{
+    background-image:url("../../src/components/common/star/star48_off@2x.png") ;
+  }
+  .star-36 .off{
+    background-image:url("../../src/components/common/star/star36_off@2x.png") ;
+  }
+  .star-24 .off{
+    background-image:url("../../src/components/common/star/star24_off@2x.png") ;
+  }
+  .supports-item .decrease-bg{
+    background-image:url("../../src/components/Header/decrease_2@2x.png") ;
+  }
+  .supports-item .discount-bg{
+    background-image:url("../../src/components/Header/discount_2@2x.png") ;
+  }
+  .supports-item .guarantee-bg{
+    background-image:url("../../src/components/Header/guarantee_2@2x.png") ;
+  }
+  .supports-item .invoice-bg{
+    background-image:url("../../src/components/Header/invoice_2@2x.png") ;
+  }
+  .supports-item .special-bg{
+    background-image:url("../../src/components/Header/special_2@2x.png") ;
+  }
+
+  .bulletin-item .decrease-bg{
+    background-image:url("../../src/components/Seller/decrease_3@2x.png") ;
+  }
+  .bulletin-item .discount-bg{
+    background-image:url("../../src/components/Seller/discount_3@2x.png") ;
+  }
+  .bulletin-item .guarantee-bg{
+    background-image:url("../../src/components/Seller/guarantee_3@2x.png") ;
+  }
+  .bulletin-item .invoice-bg{
+    background-image:url("../../src/components/Seller/invoice_3@2x.png") ;
+  }
+  .bulletin-item .special-bg{
+    background-image:url("../../src/components/Seller/special_3@2x.png") ;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3) {
+  .bg-image{
+    background-image:url("../../src/components/Header/brand@3x.png") ;
+  }
+  .discount-bg{
+    background-image:url("../../src/components/Header/discount_1@3x.png") ;
+  }
+  .guarantee-bg{
+    background-image:url("../../src/components/Header/guarantee_1@3x.png") ;
+  }
+  .invoice-bg{
+    background-image:url("../../src/components/Header/invoice_1@3x.png") ;
+  }
+  .special-bg{
+    background-image:url("../../src/components/Header/special_1@3x.png") ;
+  }
+  .bulletin-bg{
+    background-image:url("../../src/components/Header/bulletin@3x.png") ;
+  }
+  .star-48 .on{
+    background-image:url("../../src/components/common/star/star48_on@3x.png") ;
+  }
+  .star-36 .on{
+    background-image:url("../../src/components/common/star/star36_on@3x.png") ;
+  }
+  .star-24 .on{
+    background-image:url("../../src/components/common/star/star24_on@3x.png") ;
+  }
+  .star-48 .half{
+    background-image:url("../../src/components/common/star/star48_half@3x.png") ;
+  }
+  .star-36 .half{
+    background-image:url("../../src/components/common/star/star36_half@3x.png") ;
+  }
+  .star-24 .half{
+    background-image:url("../../src/components/common/star/star24_half@3x.png") ;
+  }
+  .star-48 .off{
+    background-image:url("../../src/components/common/star/star48_off@3x.png") ;
+  }
+  .star-36 .off{
+    background-image:url("../../src/components/common/star/star36_off@3x.png") ;
+  }
+  .star-24 .off{
+    background-image:url("../../src/components/common/star/star24_off@3x.png") ;
+  }
+  .supports-item .decrease-bg{
+    background-image:url("../../src/components/Header/decrease_2@3x.png") ;
+  }
+  .supports-item .discount-bg{
+    background-image:url("../../src/components/Header/discount_2@3x.png") ;
+  }
+  .supports-item .guarantee-bg{
+    background-image:url("../../src/components/Header/guarantee_2@3x.png") ;
+  }
+  .supports-item .invoice-bg{
+    background-image:url("../../src/components/Header/invoice_2@3x.png") ;
+  }
+  .supports-item .special-bg{
+    background-image:url("../../src/components/Header/special_2@3x.png") ;
+  }
+
+  .bulletin-item .decrease-bg{
+    background-image:url("../../src/components/Seller/decrease_3@3x.png") ;
+  }
+  .bulletin-item .discount-bg{
+    background-image:url("../../src/components/Seller/discount_3@3x.png") ;
+  }
+  .bulletin-item .guarantee-bg{
+    background-image:url("../../src/components/Seller/guarantee_3@3x.png") ;
+  }
+  .bulletin-item .invoice-bg{
+    background-image:url("../../src/components/Seller/invoice_3@3x.png") ;
+  }
+  .bulletin-item .special-bg{
+    background-image:url("../../src/components/Seller/special_3@3x.png") ;
+  }
+}
+
+/*当屏幕尺寸小于320时，iphone5*/
+@media only screen and (max-width: 320px) {
+  .ratings .ratings-content .overview .overview-left {
+    flex: 0 0 116px !important;
+    width: 116px !important;
+  }
+  .ratings .ratings-content .overview .overview-right {
+    padding: 6px 0 6px 7px !important;
+  }
+  .ratings .ratings-content .overview .overview-right .score-wrapper .score {
+    margin-right: 6px !important;
+  }
+
+}
+
+
+
