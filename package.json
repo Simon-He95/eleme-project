@@ -12,7 +12,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "better-scroll": "^1.15.2",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
