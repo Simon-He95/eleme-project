@@ -8,8 +8,8 @@ import Axios from 'axios'
 import Moment from 'moment'
 
 //配置axios
-Vue.prototype.$axios = Axios;
-
+Vue.prototype.$axios = Axios.create({baseURL:'http://localhost:3333'});
+console.log(Axios);
 Vue.config.productionTip = false
 
 //引入全局star组件
