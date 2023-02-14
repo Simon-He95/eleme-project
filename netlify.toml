@@ -1,0 +1,7 @@
+
+
+[build.environment]
+  NODE_VERSION = "16"
+[build]
+  publish = "dist"
+  command = "pnpm run build && pnpm run serve"
