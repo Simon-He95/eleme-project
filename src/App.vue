@@ -21,6 +21,7 @@
 <script>
   import vHeader from './components/Header/vHeader'
   import {urlParse} from './common/js/util'
+  import {seller} from '../data.json'
 
   const ERR_OK = 0
 
@@ -43,6 +44,7 @@
           this.seller = Object.assign({},this.seller,res.data.data)
         }
       }).catch(err => {
+        this.seller = Object.assign({},this.seller,seller)
         console.log(err)
       })
     },

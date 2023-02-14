@@ -19,6 +19,7 @@
 <script type="text/ecmascript-6">
   import {urlParse} from 'common/js/util';
   import header from 'components/header/header.vue';
+  import {seller} from '../../data.json'
 
   const ERR_OK = 0;
 
@@ -39,7 +40,10 @@
         if (response.errno === ERR_OK) {
           this.seller = Object.assign({}, this.seller, response.data);
         }
-      });
+      }).catch(err=>{
+        this.seller =Object.assign({}, this.seller, seller);
+        console.log(err)
+      })
     },
     components: {
       'v-header': header

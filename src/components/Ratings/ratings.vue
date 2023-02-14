@@ -67,7 +67,7 @@
   import ratingSelect from '../common/rating/ratingSelect'
   import shopCart from '../ShopCart/shopcart'
   import BScroll from 'better-scroll'
-
+import {ratings}from '../../../data.json'
   const ERR_OK = 0;
   const ALL = 2;
 
@@ -122,6 +122,14 @@
           })
         }
       }).catch(err => {
+        this.ratings = ratings
+          this.$nextTick(() => {
+            if(!this.scroll){
+              this.scroll = new BScroll(this.scrollWrapper,{click:true});
+            }else {
+              this.scroll.refresh();
+            }
+          })
         console.log(err)
       })
       //数据更新通知到父组件

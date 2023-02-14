@@ -35,6 +35,7 @@
   import shopCart from '../ShopCart/shopcart'
   import Food from '../Food/food'
   import priceComponent from '../common/price/price'
+  import {goods} from '../../../data.json'
 
   const ERR_OK = 0;
   const ALL = 2;
@@ -63,6 +64,11 @@
           })
         }
       }).catch(err => {
+        this.goods = goods
+        this.$nextTick(() => {
+            this._initScroll();
+            this._calculateHeight();
+          })
         console.log(err)
       }),
         this.classMap = ['decrease-bg', 'discount-bg', 'special-bg', 'invoice-bg', 'guarantee-bg'];
