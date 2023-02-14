@@ -4,4 +4,4 @@
   NODE_VERSION = "16"
 [build]
   publish = "dist"
-  command = "pnpm run build && pnpm run serve"
+  command = "npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run build && npx pnpm run serve"
