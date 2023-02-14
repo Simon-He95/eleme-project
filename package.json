@@ -11,7 +11,7 @@
     "serve":"node server"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.2",
     "babel-runtime": "^6.26.0",
     "better-scroll": "^1.15.2",
     "moment": "^2.24.0",
